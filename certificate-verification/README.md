@@ -1,16 +1,13 @@
-=== Certificate Verification for WP ===
-Contributors: Hasan Rizvee
-Tags: certificate, verification, student, education, validation, certificate lookup, student id
-Requires at least: 5.0
-Tested up to: 6.5
-Stable tag: 1.0.0
-Requires PHP: 7.4
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Plugin URI: https://cibdhk.com/verification/
-Author URI: https://rizvee.github.io
-Text Domain: certificate-verification-for-wp
-Domain Path: /languages
+# Certificate Verification for WP
+
+[![License: GPLv2 or later](https://img.shields.io/badge/License-GPLv2%20or%20later-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+[![Current Version: 1.0.0](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)](#)
+[![WordPress Tested: 6.5](https://img.shields.io/badge/WordPress%20Tested-6.5-orange.svg)](#)
+[![Requires PHP: 7.4+](https://img.shields.io/badge/PHP-7.4%2B-blueviolet.svg)](#)
+
+**Plugin URI:** [https://cibdhk.com/verification/](https://cibdhk.com/verification/) <br>
+**Author:** Hasan Rizvee <br>
+**Author URI:** [https://rizvee.github.io](https://rizvee.github.io)
 
 A plugin to verify student certificates via Roll/ID and manage certificate data efficiently within WordPress.
 
