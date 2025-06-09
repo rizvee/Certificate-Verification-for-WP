@@ -168,7 +168,7 @@ function cv_manage_certificates_page_content() {
                                 'roll_id' => $roll_id,
                                 'course_name' => $course_name,
                                 'course_status' => $course_status,
-                                'date_of_birth' => !empty($date_of_birth) ? $date_of_birth : '0000-00-00',
+                                'date_of_birth' => !empty($date_of_birth) ? $date_of_birth : null,
                                 'issue_date' => $issue_date,
                                 'certificate_uid' => $certificate_uid,
                                     'updated_at' => current_time( 'mysql', 1 ) // GMT
@@ -356,7 +356,7 @@ function cv_add_new_certificate_page_content() {
                         'course_status' => $course_status_val,
                         'issue_date' => $issue_date_val,
                         'certificate_uid' => $certificate_uid_val,
-                        'date_of_birth' => !empty($date_of_birth_val) ? $date_of_birth_val : '0000-00-00',
+                        'date_of_birth' => !empty($date_of_birth_val) ? $date_of_birth_val : null,
                         'created_at' => current_time( 'mysql', 1 ), // GMT
                         'updated_at' => current_time( 'mysql', 1 )  // GMT
                     );
@@ -578,7 +578,7 @@ function cv_bulk_import_page_content() {
                             if ( !empty($date_of_birth) && !preg_match('/^\d{4}-\d{2}-\d{2}$/', $date_of_birth) ) {
                                  $current_row_errors[] = __( 'Invalid Date of Birth format (YYYY-MM-DD).', 'certificate-verification-for-wp' );
                             } elseif (empty($date_of_birth)) {
-                                $date_of_birth = '0000-00-00'; // Default if empty
+                                $date_of_birth = null; // Default if empty
                             }
 
 
