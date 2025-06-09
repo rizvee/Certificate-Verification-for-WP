@@ -55,7 +55,7 @@ function cv_activate_plugin() {
         roll_id varchar(55) NOT NULL,
         course_name tinytext NOT NULL,
         course_status varchar(55) NOT NULL,
-        date_of_birth date DEFAULT '0000-00-00' NOT NULL,
+        date_of_birth date NULL DEFAULT NULL,
         issue_date date DEFAULT '0000-00-00' NOT NULL,
         certificate_uid varchar(255) DEFAULT '' NOT NULL,
         created_at DATETIME NOT NULL,
