@@ -8,9 +8,10 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
     require_once ABSPATH . 'wp-admin/includes/class-wp-list-table.php';
 }
 
-class CV_Certificates_List_Table extends WP_List_Table {
+if ( ! class_exists( 'CV_Certificates_List_Table' ) ) {
+	class CV_Certificates_List_Table extends WP_List_Table {
 
-    public function __construct() {
+		public function __construct() {
         parent::__construct( array(
             'singular' => __( 'Certificate', 'certificate-verification-for-wp' ), // singular name of the listed records
             'plural'   => __( 'Certificates', 'certificate-verification-for-wp' ), // plural name of the listed records
@@ -244,5 +245,6 @@ class CV_Certificates_List_Table extends WP_List_Table {
         }
         $this->items = $items;
     }
+	}
 }
 ?>
